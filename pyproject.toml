@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "chatbot-app"
+version = "0.1.0"
+description = ""
+authors = ["tncoaquira <tncoaquiralt@gmail.com>"]
+readme = "README.md"
+package-mode = false
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "3.12"
+python-dotenv = "1.0.1"
+fastapi = "0.111.0"
+bs4 = "0.0.2"
+html2text = "2024.2.26"
+lxml = "5.2.2"
+langchain-community = "0.2.7"
+tiktoken = "0.7.0"
+langchain-huggingface = "0.0.3"
+psycopg2-binary = "2.9.9"
+chromadb = "0.5.3"
+langchain-chroma = "0.1.4"
+rank-bm25 = "0.2.2"
+sqlalchemy = "2.0.36"
+datasets = "3.1.0"
+einops = "0.8.0"
+langchain-openai = "0.1.25"
+langchain-google-genai = "1.0.10"
+pyjwt = "^2.10.1"
+bcrypt = "^4.2.1"
+sqlalchemyseed = "^2.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
